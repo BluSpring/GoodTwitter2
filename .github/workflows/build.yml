@@ -15,7 +15,7 @@ jobs:
     - name: Set up Bun
       uses: oven-sh/setup-bun@v2 
     - name: Install dependencies
-      uses: bun install
+      run: bun install
     - name: Build artifacts
       run: bun run build
     - name: Set dynamic tag name
