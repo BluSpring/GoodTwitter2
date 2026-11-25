@@ -40,11 +40,11 @@ export function initializeStyle(): void {
             let textColor = getComputedStyle(homeSpan).color
             let bgColor = getComputedStyle(document.body).backgroundColor
 
-            // white, white-hc, dim & lightsout have a unique text color
+            // light, light-hc, dim & dark have a unique text color
             if (TEXT_COLOR_TO_THEME.hasOwnProperty(textColor))
                 setTheme(TEXT_COLOR_TO_THEME[textColor])
 
-            // lightout-hc has a unique background color
+            // dark-hc has a unique background color
             else if (BG_COLOR_TO_THEME.hasOwnProperty(bgColor))
                 setTheme(BG_COLOR_TO_THEME[bgColor])
 
@@ -56,8 +56,8 @@ export function initializeStyle(): void {
     // not logged in
     else {
         if (document.cookie.match(/night_mode=1/)) setTheme("dim")
-        else if (document.cookie.match(/night_mode=2/)) setTheme("lightsout")
-        else                                            setTheme("white")
+        else if (document.cookie.match(/night_mode=2/)) setTheme("dark")
+        else                                            setTheme("light")
     }
 
     // scrollbar width

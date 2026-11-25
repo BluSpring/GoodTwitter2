@@ -81,12 +81,12 @@ export const MODAL_PAGES: Path = {
  * Array of available themes.
  */
 export const THEMES = [
-    "white",
+    "light",
     "dim",
-    "lightsout",
-    "white-hc",
+    "dark",
+    "light-hc",
     "dim-hc",
-    "lightsout-hc"
+    "dark-hc"
 ] as const
 
 
@@ -94,10 +94,10 @@ export const THEMES = [
  * Text color to theme mapping.
  */
 export const TEXT_COLOR_TO_THEME: {[key: string]: Theme} = {
-    "rgb(15, 20, 25)":    "white",
-    "rgb(20, 29, 38)":    "white-hc",
+    "rgb(15, 20, 25)":    "light",
+    "rgb(20, 29, 38)":    "light-hc",
     "rgb(247, 249, 249)": "dim",
-    "rgb(231, 233, 234)": "lightsout"
+    "rgb(231, 233, 234)": "dark"
 }
 
 
@@ -105,7 +105,7 @@ export const TEXT_COLOR_TO_THEME: {[key: string]: Theme} = {
  * Background color to theme mapping.
  */
 export const BG_COLOR_TO_THEME: {[key: string]: Theme} = {
-    "rgb(5, 5, 5)": "lightsout-hc"
+    "rgb(5, 5, 5)": "dark-hc"
 }
 
 

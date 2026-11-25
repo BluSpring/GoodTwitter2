@@ -112,8 +112,8 @@ $themes: (
             $map: map.merge(map.get($themes, string.slice($theme, 1, -4)), $map);
         }
 
-        // lightsout-hc has the same base colors as dim-hc
-        @if $theme == "lightsout-hc" {
+        // dark-hc has the same base colors as dim-hc
+        @if $theme == "dark-hc" {
             $map: map.merge(map.get($themes, "dim-hc"), $map);
         }
 
